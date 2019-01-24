@@ -27,15 +27,24 @@ You are welcome to visit our website: [GolenRocks.me](http://goldenrocks.me/). T
 3. Train a set of Bayesian Convolutional Neural Networks using Stochastic Gradient Langevin Dynamics to obtain more robustness
 4. Use thinning models to predict future news
 
-## Requirement
-* Python 3
+## Requirements
+Python 3
+
+Run "pip3 install -r requirements.txt" to check below dependencies
 * [PyTorch > 0.4](https://pytorch.org/)
 * numpy
 * [NLTK](https://www.nltk.org/install.html)
 * Crawler tools
-  - pip3 install lxml
-  - pip3 install bs4
-  - pip3 install urllib
+  - lxml
+  - bs4
+  - urllib
+
+Use the NLTK Downloader to obtain the punkt model:
+  
+  ```python
+  >>> import nltk    
+  >>> nltk.download('punkt')
+  ```
 
 ## Usage
 
